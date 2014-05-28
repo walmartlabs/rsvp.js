@@ -546,9 +546,12 @@ describe("RSVP extensions", function() {
         secondResolver(true);
       }, 0);
 
-      RSVP.hash({ first: first, second: second }).then(function(values) {
-        assert(values.first);
-        assert(values.second);
+      RSVP.hash({
+        first: first,
+        second: second
+      }).then(function(values) {
+        assert(values.first.value);
+        assert(values.second.value);
         done();
       });
     });
@@ -866,7 +869,7 @@ describe("RSVP extensions", function() {
       all([promise, syncThenable, asyncThenable, nonPromise]).then(function(results) {
         assert(objectEquals(results, [1, 2, 3, 4]));
         done();
-      });
+      })['catch'](done);
     });
   }
 
