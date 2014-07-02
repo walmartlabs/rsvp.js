@@ -3,7 +3,7 @@
   "namespace": "RSVP",
   "version": "3.0.10",
   "description": "A lightweight library that provides tools for organizing asynchronous code",
-  "main": "dist/commonjs/rsvp.js",
+  "main": "dist/es6-promise.js",
   "directories": {
     "lib": "lib"
   },

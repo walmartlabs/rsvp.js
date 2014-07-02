@@ -3,18 +3,11 @@ var compileModules = require('broccoli-compile-modules');
 var mergeTrees = require('broccoli-merge-trees');
 
 var browserDist = compileModules('lib', {
-  inputFiles: ['rsvp.umd.js'],
-  output: '/rsvp.js',
+  inputFiles: ['es6-promise.umd.js'],
+  output: '/es6-promise.js',
   formatter: 'bundle'
 });
 
-var nodeDist = compileModules('lib', {
-  inputFiles: ['**/*.js'],
-  output: '/commonjs',
-  formatter: 'commonjs'
-});
-
 module.exports = mergeTrees([
-  browserDist,
-  nodeDist
+  browserDist
 ]);
