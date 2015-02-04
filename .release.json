@@ -9,7 +9,7 @@
   "tagName": "%s",
   "tagAnnotation": "Release %s",
   "buildCommand": "npm run-script build-all",
-  "distRepo": "git@github.com:components/rsvp.js.git",
+  "distRepo": "git@github.com:walmartlabs/rsvp.js-component.git",
   "distStageDir": "tmp/stage",
   "distBase": "dist",
   "distFiles": ["**/*", "../package.json", "../bower.json"],
