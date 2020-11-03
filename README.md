@@ -1,3 +1,11 @@
+***
+# NOTICE:
+
+## This repository has been archived and is not supported.
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+***
+
 # RSVP.js  [![Build Status](https://secure.travis-ci.org/tildeio/rsvp.js.png?branch=master)](http://travis-ci.org/tildeio/rsvp.js)
 
 RSVP.js provides simple tools for organizing asynchronous code.
